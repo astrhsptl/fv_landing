@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/homepage.css">
+    <title>Future View</title>
+</head>
+<body>
+<main>
+    <header>
+        <div class="container header-container">
+
+        <span class="header-text">
+            <span class="text-bold text-future">Future</span><span class="text-strinify">View</span>
+        </span>
+        
+        <svg onclick="openHeaderMenu()" class="menu-burger__closed" width="37" height="29" viewBox="0 0 37 29" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect width="37" height="6.10526" rx="1.48958" fill="#0076FE"/>
+            <rect y="11.4473" width="37" height="6.10526" rx="1.48958" fill="#0076FE"/>
+            <rect y="22.8948" width="37" height="6.10526" rx="1.48958" fill="#0076FE"/>
+        </svg>
+                  
+        </div>
+    </header>
+    
+    <div class="content">
+        <!-- navbar -->
+        <nav class="preload" id="burger_opened">
+            <div class="container container-centred nav-head container header__content header_main-row">
+
+                <span class="header-text">
+                    <span class="text-bold text-future">Future</span><span class="text-strinify">View</span>
+                </span>
+                
+                <svg onclick="closeHeaderMenu()" width="37" height="31" viewBox="0 0 37 31" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect width="36.8268" height="6.1378" rx="2" transform="matrix(0.710433 -0.703765 0.710433 0.703765 3.23853 25.9174)" fill="#0076FE"/>
+                    <rect width="36.8268" height="6.1378" rx="2" transform="matrix(0.710433 0.703765 -0.710433 0.703765 7.59912 0.763062)" fill="#0076FE"/>
+                </svg>
+            </div>
+
+            <div class="header_navbar container container-centred">
+                <a href="#services" class="header_navbar-link" onclick="closeHeaderMenu()">Услуги</a>
+                <a href="#about_us" class="header_navbar-link" onclick="closeHeaderMenu()">О нас</a>
+                <a href="#cases" class="header_navbar-link" onclick="closeHeaderMenu()">Кейсы</a>
+                <a href="#faq" class="header_navbar-link" onclick="closeHeaderMenu()">FAQ</a>
+                <a href="#contacts" class="header_navbar-link" onclick="closeHeaderMenu()">Контакты</a>
+            </div>
+        
+        </nav>
+
+        <!-- Section preview -->
+        <section class="section-preview container container-centred">
+            <div class="preview_content">
+                <p class="text-bold preview-text__head">Future View</p>
+                <p class="preview-text__common">Разрабатываем и внедряем программные продукты,  обеспечиваем надежную поддержку</p>
+                <button class="button-common button-preview">Сотрудничать</button>
+            </div>
+            
+            <div class="preview_steps">
+                <img src="images/Group 55.png" alt="">
+            </div>
+        </section>
+    
+        <!-- section services -->
+        <section class="section-services" id="services">
+            <div class="services__preview">
+                <div class="titile-services__preview text-bold">
+                    Наши услуги
+                </div>
+                <div class="description-services__preview">
+                    Мы предоставляем широкий спектр услуг, которые помогут вам достичь целей вашего бизнеса: web и мобильная разработка, услуги по анализу данных, дизайну и DevOps
+                </div>
+            </div>
+
+            <div class="services-container container container-centred">
+                <div class="service-card">
+                    <img class="service-star" src="./images/svg/stars.svg" alt="">
+                    Frontend
+                </div>
+                
+                <div class="service-card">
+                    <img class="service-star" src="./images/svg/stars.svg" alt="">
+                    Backend
+                </div>
+                
+                <div class="service-card">
+                    <img class="service-star" src="./images/svg/stars.svg" alt="">
+                    Data analysis
+                </div>
+                
+                <div class="service-card">
+                    <img class="service-star" src="./images/svg/stars.svg" alt="">
+                    DevOps
+                </div>
+                
+                <div class="service-card">
+                    <img class="service-star" src="./images/svg/stars.svg" alt="">
+                    Mobile development
+                </div>
+            </div>
+        </section> 
+
+
+        <!-- Section cards -->
+        <section class="section-cards-present container container-centred" id="about_us">
+            <div class="cards-present_title text-bold">Почему <span class="text-blue">Future View?</span></div>
+
+            <div class="container-card">
+                
+                <div class="card-present">
+                    <img class="card-image" src="images/svg/reliability.svg" alt="">
+                    <div class="card-title text-bold">Надёжность</div>
+                    <div class="card-description">
+                        Мы готовы быть вашим надежным партнером в сфере информационных технологий и обеспечить ваше будущее в надежных руках
+                    </div>
+                </div>
+
+                <div class="card-present">
+                    <img class="card-image" src="images/svg/speed.svg" alt="">
+                    <div class="card-title text-bold">Скорость</div>
+                    <div class="card-description">
+                        Мы выполняем все заказы в оптимальные сроки, не перенося дедлайны 
+                    </div>
+                </div>
+
+                <div class="card-present">
+                    <img class="card-image" src="images/svg/contact.svg" alt="">
+                    <div class="card-title text-bold">Гибкий подход</div>
+                    <div class="card-description">
+                        Мы готовы предоставить индивидуальный подход к каждому проекту и решению задач нашего клиента
+                    </div>
+                </div>
+
+                <div class="card-present">
+                    <img class="card-image" src="images/svg/security.svg" alt="">
+                    <div class="card-title text-bold">Безопасность</div>
+                    <div class="card-description">
+                        Мы заботимся о безопасности данных наших клиентов, не допуская утечки информации о ваших проектах
+                    </div>
+                </div>
+
+                <div class="card-present">
+                    <img class="card-image" src="images/svg/fv.svg" alt="">
+                    <div class="card-title text-bold">Вклад в будущее</div>
+                    <div class="card-description">
+                        Сотрудничая с нами, вы получаете долговременную поддержку продукта и возможность постоянного сотрудничества с надёжным партнёром
+                    </div>
+                </div>
+                
+                <div class="card-present">
+                    <img class="card-image" src="images/svg/team.svg" alt="">
+                    <div class="card-title text-bold">Команда мечты</div>
+                    <div class="card-description">
+                        Сотрудничая с нами, вы полагаетесь на команду специалистов, с каждым днём всё больше развивающихся в IT сфере
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+
+        <!-- section subs -->
+        <section class="section-sub container container-centred">
+            <p class="text-bold root-section-title container">И все это не только на словах</p>
+            <button class="button-common">Убедитесь сами</button>
+        </section>
+
+
+        <!-- section services -->
+        <section class="section-services" id="about_us">
+            <div class="services__preview">
+                <div class="titile-services__preview text-bold">
+                    Наша команда
+                </div>
+                <div class="description-services__preview">
+                    Наша команда состоит из опытных и перспективных молодых специалистов, которые готовы решать самые сложные задачи в сфере информационных технологий
+                </div>
+            </div>
+
+            <div class="container-interview container container-centred">
+                <div class="inteview-card">
+                    <img class="interview-photo" src="./images/kulpinov.png" alt="">
+                    <div class="text-container-interview">
+                        <div class="interview-name interview-container-text text-bold">
+                            Никита Кульпинов
+                        </div>
+                        <div class="interview-description interview-container-text">
+                            Глава <span class="text-blue">Future View</span> и ведущий <span class="text-blue">DevOps</span> специалист
+                        </div>
+                    </div>
+                </div>
+
+                <div class="inteview-card">
+                    <img class="interview-photo" src="./images/granov.png" alt="">
+                    <div class="text-container-interview">
+                        <div class="interview-name interview-container-text text-bold">
+                            Олег Гранов
+                        </div>
+                        <div class="interview-description interview-container-text">
+                            Глава отдела <span class="text-blue">Frontend разработки</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="inteview-card">
+                    <img class="interview-photo" src="./images/sboev.png" alt="">
+                    <div class="text-container-interview">
+                        <div class="interview-name interview-container-text text-bold">
+                            Артём Сбоев
+                        </div>
+                        <div class="interview-description interview-container-text">
+                            Глава отдела <span class="text-blue">Backend разработки</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="inteview-card">
+                    <img class="interview-photo" src="./images/balandin.png" alt="">
+                    <div class="text-container-interview">
+                        <div class="interview-name interview-container-text text-bold">
+                            Богдан Баландин
+                        </div>
+                        <div class="interview-description interview-container-text">
+                            Глава отдела <span class="text-blue">мобильной разработки</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>      
+
+        <!-- section cases -->
+        <section class="section-cases container container-centred" id="cases">
+            <div class="cards-cases-text text-bold">Крупные кейсы</div>
+
+            <div class="container-cases">
+                <div class="case-present">
+                    <div class="case-title text-bold">kibtop.ru</div>
+                    <div class="case-description">
+                        Сайт интернет-магазина, ориентированный на русскоговорящую, англоговорящую и турецкую аудиторию
+                    </div>
+                </div>
+
+                <div class="case-present">
+                    <div class="case-title text-bold">Ваш Грузовой</div>
+                    <div class="case-description">
+                        Лендинг компании “Ваш Грузовой”, занимающейся грузоперевозками
+                    </div>
+                </div>
+
+                <div class="case-present">
+                    <div class="case-title text-bold">ВВБ</div>
+                    <div class="case-description">
+                        Сервис подписания криптографическим шифром
+                    </div>
+                </div>
+            </div>
+        </section> 
+
+        <section class="section-sub container container-centred">
+            <p class="text-bold root-section-title">Здесь может быть ваш проект</p>
+            <button class="button-common">Создадим его вместе</button>
+        </section>
+
+
+        <!-- section faq -->
+        <section class="section-faq container container-centred" id="faq">
+            <div class="faq-title root-section-title text-bold">
+                Часто задаваемые вопросы
+            </div>
+            <div class="container-faq">
+                <div class="message message_faq">
+                    Меняется ли цена выполнения заказа в процессе?
+                </div>
+
+                <div class="message message_answer">
+                    Цена обговаривается перед выполнением заказа и остаётся неизменной до самого конца
+                </div>
+
+                <div class="message message_faq">
+                    Каковы сроки выполнения заказов?
+                </div>
+
+                <div class="message message_answer">
+                    Срок выполнения заказа зависит от его сложности и специфики, минимальный срок - 3 рабочих дня
+                </div>
+
+                <div class="message message_faq">
+                    Что, если меня не устроит качество выполнения заказа?
+                </div>
+                
+                <div class="message message_answer">
+                    Мы заботимся о качестве выполнения заказов и стараемся не допускать таких случаев. Но если всё же такое случится, мы внесём все необходимые правки
+                </div>
+            </div>
+        </section>    
+
+        <section class="section-sub container container-centred" id="contacts">
+            <p class="text-bold root-section-title">Не нашли ответ на свой вопрос?</p>
+            <button class="button-common">Задайте его нам</button>
+        </section>
+
+    </div>
+
+    <footer>
+        <div class="container container-centred">
+            <div class="footer_top">
+                <div class="footer_contacts">
+                    <h3 class="footer_title">
+                        Контакты
+                    </h3>
+                    <p class="footer_text">
+                        +7 (951) 490-41-26
+                    </p>
+                </div>
+                <div class="footer_location">
+                    <h3 class="footer_title">
+                        Социальные сети
+                    </h3>
+                    <div class="footer_text">
+                        <a href="https://vk.com/gangfv"><img src="./images/svg/vk.svg" alt=""></a>
+                        <a href="https://t.me/gangfv"><img src="images/svg/telegram.svg" alt=""></a>
+                    </div>
+                </div>
+            </div>
+            <div class="line"></div>
+            <div class="footer_bottom">
+                <li class="footer_li">
+                    <a href="#services" class="footer_link">Услуги</a>
+                </li>
+                <li class="footer_li">
+                    <a href="#about_us" class="footer_link">О нас</a>
+                </li>
+                <li class="footer_li">
+                    <a href="#cases" class="footer_link">Кейсы</a>
+                </li>
+                <li class="footer_li">
+                    <a href="#faq" class="footer_link">FAQ</a>
+                </li>
+                <li class="footer_li">
+                    <a href="#contacts" class="footer_link">Контакты</a>
+                </li>
+            </div>
+        </div>
+    </footer>
+
+</main>
+<script src="./js/menu.js"></script>
+</body>
+</html>
