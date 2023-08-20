@@ -1,0 +1,8 @@
+**/.env
+**/.vs
+**/.vscode
+**/.idea
+**/venv
+**/db.sqlite3
+**/media
+**/__pycache__

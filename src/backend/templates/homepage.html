@@ -1,0 +1,193 @@
+{% extends "_base.html" %}
+{% load static %}
+
+
+{% block title %}Future View{% endblock title %}
+
+{% block styles %}
+<link rel="stylesheet" href='{% static "css/homepage.css" %}'>
+{% endblock styles %}
+
+{% block main %}
+<!-- Section preview -->
+<section class="section-preview container container-centred">
+    <div class="preview_content">
+        <p class="text-bold preview-text__head">Future View</p>
+        <p class="preview-text__common">Разрабатываем и внедряем программные продукты,  обеспечиваем надежную поддержку</p>
+        <a href="https://t.me/gangfv"><button class="button-common button-preview">Сотрудничать</button></a>
+    </div>
+    
+    <div class="preview_steps">
+        <img src='{% static "images/Group 55.png" %}' alt="" />
+    </div>
+</section>
+
+<!-- section services -->
+<section class="section-services" id="services">
+    <div class="services__preview">
+        <div class="titile-services__preview text-bold">
+            Наши услуги
+        </div>
+        <div class="description-services__preview">
+            Мы предоставляем широкий спектр услуг, которые помогут вам достичь целей вашего бизнеса: web и мобильная разработка, услуги по анализу данных, дизайну и DevOps
+        </div>
+    </div>
+
+    <div class="services-container container container-centred">
+        {% for service in services %}
+            <div class="service-card">
+                <img class="service-star" src='{% static "./images/svg/stars.svg" %}' alt="">
+                {{ service }}
+            </div>
+        {% endfor %}
+    </div>
+</section> 
+
+
+<!-- Section cards -->
+<section class="section-cards-present container container-centred" id="about_us">
+    <div class="cards-present_title text-bold">Почему <span class="text-blue">Future View?</span></div>
+    <div class="container-card">
+        {% for item in about_us %}
+            <div class="card-present">
+                <img class="card-image" src='{% static item.svg %}' alt="">
+                <div class="card-title text-bold">{{ item.title }}</div>
+                <div class="card-description">
+                    {{ item.description }}
+                </div>
+            </div>
+        {% endfor %}
+
+    </div>
+</section>
+
+
+<!-- section subs -->
+<section class="section-sub container container-centred">
+    <p class="text-bold root-section-title container">И все это не только на словах</p>
+    <a href="https://t.me/gangfv"><button class="button-common">Убедитесь сами</button></a>
+</section>
+
+
+<!-- section services -->
+<section class="section-services" id="about_us">
+    <div class="services__preview">
+        <div class="titile-services__preview text-bold">
+            Наша команда
+        </div>
+        <div class="description-services__preview">
+            Наша команда состоит из опытных и перспективных молодых специалистов, которые готовы решать самые сложные задачи в сфере информационных технологий
+        </div>
+    </div>
+
+    <div class="container-interview container container-centred">
+        <div class="inteview-card">
+            <img class="interview-photo" src='{% static "images/kulpinov.png"  %}' alt="">
+            <div class="text-container-interview">
+                <div class="interview-name interview-container-text text-bold">
+                    Никита Кульпинов
+                </div>
+                <div class="interview-description interview-container-text">
+                    Глава <span class="text-blue">Future View</span> и ведущий <span class="text-blue">DevOps</span> специалист
+                </div>
+            </div>
+        </div>
+
+        <div class="inteview-card">
+            <img class="interview-photo" src='{% static "images/granov.png" %}' alt="">
+            <div class="text-container-interview">
+                <div class="interview-name interview-container-text text-bold">
+                    Олег Гранов
+                </div>
+                <div class="interview-description interview-container-text">
+                    Глава отдела <span class="text-blue">Frontend разработки</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="inteview-card">
+            <img class="interview-photo" src='{% static "images/sboev.png" %}' alt="">
+            <div class="text-container-interview">
+                <div class="interview-name interview-container-text text-bold">
+                    Артём Сбоев
+                </div>
+                <div class="interview-description interview-container-text">
+                    Глава отдела <span class="text-blue">Backend разработки</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="inteview-card">
+            <img class="interview-photo" src='{% static "images/balandin.png"  %}' alt="">
+            <div class="text-container-interview">
+                <div class="interview-name interview-container-text text-bold">
+                    Богдан Баландин
+                </div>
+                <div class="interview-description interview-container-text">
+                    Глава отдела <span class="text-blue">мобильной разработки</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>      
+
+<!-- section cases -->
+<section class="section-cases container container-centred" id="cases">
+    <div class="cards-cases-text text-bold">Крупные кейсы</div>
+
+    <div class="container-cases">
+        {% for item in cases %}
+            <div class="case-present">
+                <div class="case-title text-bold">{{ item.title }}</div>
+                <div class="case-description">
+                    {{ item.description }}
+                </div>
+            </div>
+        {% endfor %}
+
+    </div>
+</section> 
+
+<section class="section-sub container container-centred">
+    <p class="text-bold root-section-title">Здесь может быть ваш проект</p>
+    <a href="https://t.me/gangfv"><button class="button-common">Создадим его вместе</button></a>
+</section>
+
+
+<!-- section faq -->
+<section class="section-faq container container-centred" id="faq">
+    <div class="faq-title root-section-title text-bold">
+        Часто задаваемые вопросы
+    </div>
+    <div class="container-faq">
+        <div class="message message_faq">
+            Меняется ли цена выполнения заказа в процессе?
+        </div>
+
+        <div class="message message_answer">
+            Цена обговаривается перед выполнением заказа и остаётся неизменной до самого конца
+        </div>
+
+        <div class="message message_faq">
+            Каковы сроки выполнения заказов?
+        </div>
+
+        <div class="message message_answer">
+            Срок выполнения заказа зависит от его сложности и специфики, минимальный срок - 3 рабочих дня
+        </div>
+
+        <div class="message message_faq">
+            Что, если меня не устроит качество выполнения заказа?
+        </div>
+        
+        <div class="message message_answer">
+            Мы заботимся о качестве выполнения заказов и стараемся не допускать таких случаев. Но если всё же такое случится, мы внесём все необходимые правки
+        </div>
+    </div>
+</section>    
+
+<section class="section-sub container container-centred" id="contacts">
+    <p class="text-bold root-section-title">Не нашли ответ на свой вопрос?</p>
+    <a href="https://t.me/gangfv"><button class="button-common">Задайте его нам</button></a>
+</section>
+{% endblock main %}

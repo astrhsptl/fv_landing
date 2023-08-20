@@ -1,0 +1,24 @@
+{% load static %}
+<!-- navbar -->
+<nav class="preload" id="burger_opened">
+    <div class="container container-centred nav-head container header__content header_main-row">
+
+        <span class="header-text">
+            <span class="text-bold text-future">Future</span><span class="text-strinify">View</span>
+        </span>
+        
+        <svg onclick="closeHeaderMenu()" width="37" height="31" viewBox="0 0 37 31" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect width="36.8268" height="6.1378" rx="2" transform="matrix(0.710433 -0.703765 0.710433 0.703765 3.23853 25.9174)" fill="#0076FE"/>
+            <rect width="36.8268" height="6.1378" rx="2" transform="matrix(0.710433 0.703765 -0.710433 0.703765 7.59912 0.763062)" fill="#0076FE"/>
+        </svg>
+    </div>
+
+    <div class="header_navbar container container-centred">
+        <a href="#services" class="header_navbar-link" onclick="closeHeaderMenu()">Услуги</a>
+        <a href="#about_us" class="header_navbar-link" onclick="closeHeaderMenu()">О нас</a>
+        <a href="#cases" class="header_navbar-link" onclick="closeHeaderMenu()">Кейсы</a>
+        <a href="#faq" class="header_navbar-link" onclick="closeHeaderMenu()">FAQ</a>
+        <a href="#contacts" class="header_navbar-link" onclick="closeHeaderMenu()">Контакты</a>
+    </div>
+
+</nav>
